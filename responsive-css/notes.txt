@@ -1,0 +1,11 @@
+
+Position:
+
+Imp: All the elements are by default static in position.
+
+Position:Absolute---> The element on which its applied it will treat if that element doesn't exist.
+
+Position:absolute and top:20px is applied--->
+1)It will check if parent has a property of position other than static.(relative or absolute)
+2)If not it will fix the position from the top of the html.
+3)If position:relative is applied to parent then child's position becomes relative to parent's
