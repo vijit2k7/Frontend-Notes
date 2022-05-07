@@ -1,0 +1,61 @@
+
+.parent{
+    background-color: aqua;
+    width:450px;
+    height:450px;
+    margin-left:50px;
+  }
+  .child{
+    background-color: red;
+    width:150px;
+    height:150px;
+    /* transition: transform 2s linear; */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes example {
+   0% {}
+   25% {transform: translateX(200%);background-color: blue;}
+  50% {transform: translate(200%,200%);background-color: chartreuse;}
+   75% {transform: translate(0,200%); background-color: blueviolet;} 
+  100% {background-color: yellow;} 
+
+    
+}
+  .parent:hover .child{
+      animation-play-state: paused;
+  }
+  
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(102, 39, 39);
+    padding: 1rem;
+}
+
+
+.navbar li:hover {
+    background-color: #555;
+}
+
+.testing-transform{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 50px;
+    padding: 20px;
+}
