@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="script.js" defer></script>
+    <title>FLEX-GRID</title>
+</head>
+<body>
+    <h1 class='title'>FLEXBOX AND GRID-CSS</h1>
+    <div class='container'>
+        <div class='button'>
+            <div class='button1' onclick="chooseFrame('flex')">FLEX-PDF</div>
+            <div class='button1' onclick="chooseFrame('flex-demo')">FLEX-DEMO</div>
+            <div class='button1' onclick="chooseFrame('grid')">GRID-PDF</div>
+            <div class='button1' onclick="chooseFrame('grid-demo')">GRID-DEMO</div>
+        </div>
+
+        <div id='flex'>
+            <iframe src="/pdf/flex.pdf" width="100%" height="520px"></iframe>
+        </div>
+        <div id='grid'>
+            <iframe src="/pdf/grid.pdf" width="100%" height="520px"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>

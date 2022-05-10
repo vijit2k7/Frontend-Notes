@@ -1,0 +1,56 @@
+.flex-container{
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+    border: 5px solid blueviolet;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.box-1{
+    width:100px;
+    height: 100px;
+    background-color: coral;
+    border: 3px solid;
+}
+
+.box-2{
+    width:100px;
+    height: 100px;
+    background-color: green;
+    border: 3px solid;
+    order: 4;
+}
+
+.box-3{
+    width:100px;
+    height: 100px;
+    background-color: gray;
+    border: 3px solid;
+    order: 2;
+}
+
+.box-4{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+    border: 3px solid;
+}
+
+.box-5{
+    width:100px;
+    height: 100px;
+    background-color: yellow;
+    border: 3px solid;
+    order: 1;
+}
+.box-6{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    border: 3px solid;
+}
