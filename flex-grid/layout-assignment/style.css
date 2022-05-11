@@ -1,6 +1,3 @@
-/* .container{
-    display: flex;
-} */
 .title{
     text-align: center;
     /* margin: 50px; */
@@ -11,21 +8,20 @@
 }
 .button{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
     height: 50px;
+    gap: 20px;
 }
 
 .button1{
     height: 30px;
     background-color: lightgray;
     padding: 30px;
+    border-radius: 40px;
 }
 .button1:hover{
     background-color: gray;
     cursor: pointer;
-}
-
-#flex,#grid{
-    margin-top: 100px;
 }

@@ -13,6 +13,8 @@ function chooseFrame(value)
         }
     else if(value=='flex-demo')
         location.href=location.origin+'/flex-grid/flex.html'
-    else
+    else if(value=='grid-demo')
         location.href=location.origin+'/flex-grid/grid.html' 
+    else
+        location.href=location.origin+'/flex-grid/layout-assignment/index.html' 
 }

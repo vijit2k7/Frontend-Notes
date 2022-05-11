@@ -1,0 +1,226 @@
+/*uncomment for different Grids*/
+/************************
+SIMPLE GRID 
+**************************/
+.container{
+  border: 3px solid black;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "sidebar2 main sidebar"
+  "footer footer footer";
+}
+
+.item-1{
+    grid-area: header;
+
+}
+
+.item-5{
+    grid-area: footer;
+}
+
+.item-2{
+    grid-area: main;
+}
+
+.item-3{
+    grid-area: sidebar;
+}
+
+.item-4{
+    grid-area: sidebar2;
+}
+
+
+
+/************************
+SAME AS 
+**************************/
+
+/* .container{
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: 150px;
+}
+ */
+
+/************************
+WITH GUTTER
+**************************/
+
+/* .container{
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-gap: 30px;
+} */
+
+
+/********************************
+AUTOMATED DISTRIBUTION WITH FR 
+*********************************/
+
+/* .container{
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+ */
+
+/********************************
+AUTOMATED DISTRIBUTION WITH FIXED COL 
+*********************************/
+
+/* .container{
+  display: grid;
+  grid-template-columns: 300px 3fr 2fr;
+} */
+
+
+
+/****************************
+MOVING ITEMS HORIZONTALLY 
+****************************/
+
+/*   .container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+  }
+  .item-1 {
+   grid-column: 1 / 4;
+  }
+  .item-5 {
+   grid-column: 3 / 4;
+  }
+ */
+
+
+/***************************
+MOVING ITEMS VERTICALLY 
+**************************/
+
+/* .container{
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+.item-2 {
+ grid-row: 1 / 3;
+}
+.item-1 {
+ grid-column: 1 / 4;
+ grid-row: 3 / 4;
+}
+ */
+
+/************************
+ADJUST FOR OTHER DEVICES 
+**************************/
+
+/* .container{
+ display: grid;
+ grid-template-columns: 250px 3fr 2fr;
+}
+.item-1 {
+ grid-column: 1 / 4;
+}
+.item-2 {
+ grid-row: 2 / 4;
+}
+@media only screen and (max-width: 720px){
+  .container{
+   grid-template-columns: 1fr 1fr;
+  } 
+  .item-1 {
+   grid-column: 1 / 3;
+   grid-row: 2 / 3;
+  } 
+  .item-2 {
+   grid-row: 1 / 1;
+  }
+}
+ */
+
+ /********************************
+ADVANCED SKETCH EXAMPLE 2
+*********************************/
+
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 350px 350px;
+    grid-template-rows: 150px;
+  } 
+  
+  
+  .item-1 {
+    grid-column: 1/4;
+  }
+  
+  .item-2 {
+    grid-row: 2 / 4;
+  }
+  
+  .item-3 {
+    grid-column: 2/4
+  }
+  
+  .item-4 {
+    grid-column: 2/3;
+  }
+  
+  .footer{
+    grid-column: 1/5;
+    background-color: #2C3043;
+  }
+  
+  
+  @media only screen and (max-width: 1000px){
+    .container {
+    grid-template-columns: 1fr 1fr;
+  } 
+    .item-2 {
+      grid-column: 1/3;
+      grid-row: 4/5;
+    }
+    .item-3 {
+      grid-column: 1/3;
+    }
+    .item-4 {
+      grid-column: 1/2;
+    }
+     .item-5 {
+      grid-column: 2/3;
+    }
+  } */
+  
+  
+  
+  
+  /************************
+  BASE STYLING
+  **************************/
+  .item-1 {
+      background-color: #2C3043;
+  }
+  .item-2 {
+      background-color: #FC6057;
+  }
+  .item-3 {
+      background-color: #FDA061;
+
+  }
+  .item-4 {
+      background-color: #01A787;
+
+  }
+  .item-5 {
+      background-color: #1BC1A1;
+  }
+  
+  body {
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      line-height: 5;
+  }
