@@ -132,7 +132,7 @@ function a(b)
     console.log('Inside fucntion a');
 }
 
-a(greet);
+
 
 
 
