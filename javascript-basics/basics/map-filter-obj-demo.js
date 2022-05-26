@@ -39,7 +39,7 @@ console.log(moreThan90);*/
 
 //Reduce
 
-let arr3=[2,3,4,5,1];
+/*let arr3=[2,3,4,5,1];
 
 let sum=0;
 for(let i=0;i<arr3.length;i++)
@@ -59,7 +59,7 @@ console.log(arr3.reduce((acc,curr)=>{
     if(curr<acc)
         acc=curr;
     return acc;
-},arr[0]));
+},arr[0]));*/
 
    
 
@@ -78,8 +78,45 @@ const users=[
     {fname:'logan',lname:'paul',weight:25},
 ]
 
+
+
 //Q1.Calculate fullname apply map,filter and reduce array of fullnames
+let fullnames=users.map(item=>item.fname+' '+item.lname);
+//console.log(fullnames);
 
 //Q2. fullnames of people whose weight<70;
+let fullnames70=users.filter(item=>item.weight<70).map(item=>item.fname+' '+item.lname);
+//console.log(fullnames70);
 
-//Q3. Create an object {85:2,65:1,25:1} initialValue
+//Q3. Create an object {85:2,65:1,25:1} initialValue 
+
+let map={};
+
+for(let i=0;i<users.length;i++)
+{
+    if(!map[users[i].weight])
+        map[users[i].weight]=0;
+    map[users[i].weight]+=1;
+}
+// console.log(map);
+
+let final=users.reduce((acc,curr)=>{
+    if(!acc[curr.weight])
+        acc[curr.weight]=0;
+    acc[curr.weight]+=1;
+    return acc;
+},{});
+
+//console.log(final);
+
+
+
+
+
+
+
+
+
+
+
+
