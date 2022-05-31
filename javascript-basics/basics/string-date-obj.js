@@ -43,7 +43,8 @@ const person1 = {
         console.log('The name is' + ' ' + this.name + ' ' + surname); }
 };
 
-person1.greet();
+
+//person1.greet();
 
 
 function Person () {
@@ -59,7 +60,35 @@ function Person () {
 const person3 = new Person();
 const person4 = new Person();
 person3.height=180;
-console.log(person4.greet());
+// console.log(person4.greet());
+
+
+//this=constructor function object and it wont have access to local variables
+function Person (person_name, person_age, person_gender) {
+
+    // assigning  parameter values to the calling object
+     this.name = person_name,
+     this.age = person_age,
+     this.gender = person_gender,
+ 
+     this.greet = function () {
+         return ('Hi' + ' ' + this.name + ' ' + this.person_name);
+     }
+ }
+
+ const person5 = new Person('Vijit',45,'Male');
+ const person6 = new Person('Vijit',45,'Male');
+ console.log(person5.person_gender);
+
+ let obj={};
+ obj.hello='Hello';
+ person5.height=190;
+ console.log(obj,person5);
+ console.log(person6.height);
+
+
+
+
 
 
 
