@@ -1,0 +1,27 @@
+
+
+const grandparent=document.querySelector('.grand-parent-1');
+const parent=document.querySelector('.parent-1');
+const childOne=document.querySelector('.child-1');
+const childTwo=document.querySelector('.child-2');
+// let toggleParent=false;
+
+//Event Bubbling---> event propogates from bottom to top
+//Event Capturing/Trickling---> event propogates from top to bottom
+
+grandparent.addEventListener('click',(e)=>{
+    console.log('grandparent clicked');
+    e.stopPropagation();
+});
+
+
+parent.addEventListener('click',(e)=>{
+    console.log('parent clicked');
+    e.stopPropagation();
+});
+
+childOne.addEventListener('click',(e)=>{
+    console.log('child One clicked');
+    e.stopPropagation();
+});
+
