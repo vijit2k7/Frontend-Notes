@@ -8,10 +8,17 @@
     <link rel="stylesheet" type="text/css" href="./traversal.css"/>
 </head>
 <body>
-    <div class="grand-parent-1" id="grand-parent-1">
+    <!-- <div class="grand-parent-1" id="grand-parent-1">
         <div class="parent-1">
             <div class="child-1"></div>
-            <div class="child-2"></div>
+            <div class="child-1"></div>
+        </div>
+    </div> -->
+    <div class='container'>
+        <input type='number' value="0" placeholder="Enter number 1" id="input1" onchange="getValue(this.value,this.id)">
+        <input type='number' value="0" placeholder="Enter number 2" id="input2" onchange="getValue(this.value,this.id)">
+        <div>
+            <button onclick="onClick()">Submit</button>
         </div>
     </div>
 </body>
