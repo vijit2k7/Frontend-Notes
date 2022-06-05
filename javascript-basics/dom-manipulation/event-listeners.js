@@ -25,10 +25,11 @@ const childTwo=document.querySelector('.child-2');
 //Event Bubbling---> event propogates from bottom to top
 //Event Capturing/Trickling---> event propogates from top to bottom
 
+//Note: VImp:Any event first trickles/capture and then bubbles (Trickles down then bubble out).
+
 grandparent.addEventListener('click',(e)=>{
     console.log('grandparent clicked');
-    e.stopPropagation();
-});
+});  
 
 
 parent.addEventListener('click',(e)=>{
@@ -36,9 +37,38 @@ parent.addEventListener('click',(e)=>{
     e.stopPropagation();
 });
 
+
 childOne.addEventListener('click',(e)=>{
     console.log('child One clicked');
-    e.stopPropagation();
 });
 
+
+document.addEventListener('click',(e)=>{
+    console.log('document clicked');
+});
+
+
+// 3 events here---> 1 capturing 2 are bubbling
+
+// capturing---> grandparent--->parent--->parent--->grandparent
+
+// Grandparent clicked--->clicked;
+
+// document--->grandparent--->document
+
+//  document--->grandparent---->parent--->child--->child--->parent---->grandparent--->document
+
+//  grandparent clicked
+//  parent clicked
+//  child clicked
+//  document clicked
+
+//1.Identify the click and then identify event propagation
+//2.Seperate events into bubbling and capturing
+//3. Print the events according to the propogation.
+
+//document
+//grandparent
+//child
+//parent
 

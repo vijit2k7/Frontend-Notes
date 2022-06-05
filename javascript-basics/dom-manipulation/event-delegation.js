@@ -1,7 +1,11 @@
+// Get the element, add a click listener...
+document.getElementById("parent-list").addEventListener("click", function(e) {
 
-const ul=document.querySelector('#list1');
-
-ul.addEventListener('click',(e)=>{
-    console.log('event triggered',e.target);
-    e.target.style.backgroundColor='red';
+	// if(e.target && e.target.nodeName == "LI") {
+	// 	// List item found!  Output the ID!
+	// 	console.log("List item ", e.target.id.replace("post-", ""), " was clicked!");
+	// }
+    document.location.href='/'+e.target.id
+    
 });
+
