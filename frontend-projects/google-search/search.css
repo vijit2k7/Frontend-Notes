@@ -1,0 +1,18 @@
+table, thead, td {
+    border: 1px solid black;
+  }
+table{
+    width: 80%;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#search-bar{
+    padding: 10px;
+    width: 80%;
+    margin: 30px;
+}

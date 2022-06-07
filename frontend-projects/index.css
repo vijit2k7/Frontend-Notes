@@ -1,0 +1,29 @@
+/* .container{
+    display: flex;
+} */
+.title{
+    text-align: center;
+    /* margin: 50px; */
+    padding: 40px;
+    color: wheat;
+    background-color: darkslategray;
+    margin-bottom: 50px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+}
+
+.button1{
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 20px; 
+    padding: 30px;
+}
+.button1:hover{
+    background-color: gray;
+    cursor: pointer;
+}

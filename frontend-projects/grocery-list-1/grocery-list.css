@@ -1,0 +1,6 @@
+table, thead, td {
+    border: 1px solid black;
+  }
+table{
+    width: 80%;
+}
