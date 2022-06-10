@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  #timer{
+    border: 2px solid black;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    margin-right: 60px;
+    background-color: skyblue;
+  }
+  #wpm{
+    border: 2px solid black;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    background-color: skyblue;
+  }
+  
+  #container{
+    border: 2px solid black;
+    width: 80%;
+    height: 100px;
+    margin-top: 50px;
+    background-color: yellow;
+    border-radius: 20px;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .contain{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  span{
+      display: inline-block;
+      white-space: pre;
+  }
+
+  label{
+      font-size: 20px;
+  }
